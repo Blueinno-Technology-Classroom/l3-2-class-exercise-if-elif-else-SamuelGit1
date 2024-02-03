@@ -3,20 +3,20 @@
 Q1: 
 '''
 
-weight = int(input("Weight: "))
-height = int(input("Height: "))
+weight = float(input("Weight: "))
+height = float(input("Height: "))
 
 BMI = weight / (height * height)
 
-if  BMI < 18.5 :
+if BMI < 18.5 :
     print(f"Your BMI is {BMI}, you are underweight.")
-elif 18.5 <= BMI < 25 :
+elif BMI < 25 :
     print(f"Your BMI is {BMI}, you have a normal weight.")
-elif 25 <= BMI < 30 :
+elif BMI < 30 :
     print(f"Your BMI is {BMI}, you are overweight.")
-elif 30 <= BMI < 35 :
+elif BMI < 35 :
     print(f"Your BMI is {BMI}, you are in obesity class I.")
-elif 35 <= BMI < 40 :
+elif BMI < 40 :
     print(f"Your BMI is {BMI}, you are in obesity class II.")
 else:
     print(f"Your BMI is {BMI}, you are in obesity class III.")
